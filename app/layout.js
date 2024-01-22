@@ -10,9 +10,9 @@ export const metadata = {
   description: "World Cup 2022",
 };
 
-export default function RootLayout({ children, params }) {
+export default function RootLayout({ children }) {
   return (
-    <html lang={params.lang}>
+    <html lang="en">
       <body className={font.className}>
         <Header />
         <main>{children}</main>

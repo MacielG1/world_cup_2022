@@ -25,7 +25,6 @@ export default async function page({ params }) {
   let data = await getGroup(params.group);
 
   let teamNames = data?.table?.map((team) => team.team.name);
-  // find all matchesm for this group
   let groupMatches = allMatches.filter((match) => match.group === convertToTitleCase(params.group));
 
   return (
